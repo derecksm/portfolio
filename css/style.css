@@ -6,6 +6,8 @@ entire Sheet
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 /* =============== 
@@ -15,6 +17,7 @@ entire Sheet
 html {
     position: relative;
     min-height: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -35,6 +38,7 @@ a {
     justify-content: center;
     align-items: center;
     background-color: #b00b00;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .logo {
@@ -49,7 +53,7 @@ a {
 
 .nav-item-bar {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: center;
     background-color: white;
     padding: 10px;
@@ -119,17 +123,20 @@ a {
     background-color: white;
     margin: 40px 50px;
     padding-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #title-about-me {
     color: #b00b00;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Montserrat', sans-serif;
     border-bottom: 2px solid lightgray;
     font-size: 40px;
     padding: 20px;
     margin-bottom: 15px;
     width: 100%;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 #selfie-img {
@@ -144,7 +151,8 @@ a {
     font-size: 35px;
     color: #2a2a2a;
     text-align: center;
-    margin: 10px
+    margin: 2vh 10vw;
+    font-family: 'Montserrat', sans-serif;
 }
 #resy{
     justify-content: center;
@@ -159,10 +167,13 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 #bio-description{
     margin: 2vh 10vw;
+    line-height: 18px;
+    font-size: 14px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -175,7 +186,7 @@ a {
     }
     #title-about-me {
         color: #b00b00;
-        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-family: 'Montserrat', sans-serif;
         border-bottom: 2px solid lightgray;
         font-size: 40px;
         padding: 20px;
@@ -204,6 +215,7 @@ a {
         font-family: droid serif;
         font-size: 42px;
         color: #2a2a2a;
+        margin: 18px;
     }
     #bio-description{
         grid-column: 2 / span 1;
@@ -224,7 +236,7 @@ a {
 
 #porty {
     color: #b00b00;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Montserrat', sans-serif;
     border-bottom: 2px solid lightgray;
     font-size: 40px;
     padding: 20px;
@@ -289,7 +301,7 @@ a {
 
 .contact {
     color: #b00b00;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Montserrat', sans-serif;
     border-bottom: 2px solid lightgray;
     font-size: 40px;
     padding: 20px;

@@ -7,7 +7,6 @@ entire Sheet
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-
 }
 
 /* =============== 
@@ -136,7 +135,6 @@ a {
     width: 100%;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-
 }
 
 #selfie-img {
@@ -144,6 +142,10 @@ a {
     margin: auto;
     max-width: 75%;
     height: auto;
+}
+
+#bio {
+    font-family: 'Montserrat', sans-serif;
 }
 
 #bio-title {
@@ -154,12 +156,14 @@ a {
     margin: 2vh 10vw;
     font-family: 'Montserrat', sans-serif;
 }
-#resy{
+
+#resy {
     justify-content: center;
     display: flex;
 }
+
 #resume {
-    background-color:#b00b00;
+    background-color: #b00b00;
     color: white;
     height: 45px;
     width: 150px;
@@ -170,9 +174,9 @@ a {
     text-align: center;
 }
 
-#bio-description{
+#bio-description {
     margin: 2vh 10vw;
-    line-height: 18px;
+    line-height: 20px;
     font-size: 14px;
 }
 
@@ -200,6 +204,7 @@ a {
         justify-items: center;
         width: 100%;
         padding: 10px 20px;
+        font-family: 'Montserrat', sans-serif;
     }
     #selfie-img {
         max-width: 100%;
@@ -210,6 +215,7 @@ a {
         margin: auto;
     }
     #bio-title {
+        font-family: 'Montserrat', sans-serif;
         grid-column: 2 / span 1;
         grid-row: 1 / span 1;
         font-family: droid serif;
@@ -217,17 +223,15 @@ a {
         color: #2a2a2a;
         margin: 18px;
     }
-    #bio-description{
+    #bio-description {
         grid-column: 2 / span 1;
         grid-row: 2 / span 3;
         margin: 0;
-
     }
     #resy {
         grid-column: 2 / span 1;
         grid-row: 5 / span 1;
     }
-    
 }
 
 /* =============== 
@@ -285,9 +289,11 @@ a {
     width: 100%;
     height: 30px;
 }
+
 .pokedex {
     text-align: center;
 }
+
 /* =============== 
   contact.html
   =============== */

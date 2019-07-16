@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./css/style.css">
 <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+<script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
 </head>
 
 <body>
@@ -39,10 +40,10 @@
             </span>
         </div>
     </div>
-    <h2 id="bio-title">A Little About Myself</h2>
-    <div class="home-image home-image-1">
+    <h2 class="anim" id="bio-title">A Little About Myself</h2>
+    <div class="anim home-image home-image-1">
         <div class="description-background">
-            <span class="bio-description">
+            <span class="anim bio-description">
                 I graduated from the University of Hawaii with a bachelor's degree in International Business. I also
                 had the opportunity to study in Spain and New Zealand for six months at each location studying
                 Business.
@@ -50,28 +51,28 @@
         </div>
     </div>
 
-    <div class="bio-description-2">
-        <div class="bio-image">
-            <img src="./images/derecksm-1.jpeg" class="hi" alt="Dereck San Miguel">
+    <div class="anim bio-description-2">
+        <div class="anim bio-image">
+            <img src="./images/derecksm-1.jpeg" class="anim hi" alt="Dereck San Miguel">
         </div>
-        <p class="bio-description-2-txt">
+        <p class="anim bio-description-2-txt">
             I am a part-time student UC Irvine in pursuit of a Full Stack Development certificate. Really excited to
             apply these skills that I’ve learned into my professional career. Currently skilled in HTML, CSS,
             Javascript, React.js, Node.js, and MySQL.
         </p>
     </div>
 
-    <div class="home-image home-image-3">
-            <div class="description-background">
-                <span class="bio-description">
-                        Currently an experienced full-time Ecommerce Specialist with a demonstrated history of working in the
-                        consumer goods industry. Skilled in Search Engine Optimization (SEO), Affiliate Management, Data
-                        Analysis, and Marketing Strategy.
-                </span>
-            </div>
+    <div class="anim home-image home-image-3">
+        <div class="anim description-background">
+            <span class="anim bio-description">
+                Currently an experienced full-time Ecommerce Specialist with a demonstrated history of working in the
+                consumer goods industry. Skilled in Search Engine Optimization (SEO), Affiliate Management, Data
+                Analysis, and Marketing Strategy.
+            </span>
         </div>
+    </div>
 
-    <footer class="footer">
+    <footer class="anim footer">
         DERECK SAN MIGUEL | FULL STACK WEB DEVELOPER
     </footer>
 
@@ -83,8 +84,10 @@
         })
         text.start()
         text.reveal(4000)
-    // document.getElementsByClassName(".border").style.color = "red";
-
+    </script>
+    <script type="text/javascript">
+        window.sr = ScrollReveal()
+        sr.reveal('.anim')
     </script>
 
 </body>

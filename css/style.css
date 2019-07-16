@@ -13,19 +13,13 @@ entire Sheet
   body
   =============== */
 
+@font-face {
+    font-family: montserratBold;
+    src: url(../fonts/montserrat-mold.ttf)
+}
+
 html {
-    position: relative;
-    min-height: 100%;
     font-family: 'Montserrat', sans-serif;
-}
-
-body {
-    background-image: url(../images/prism.png);
-    margin-bottom: 60px;
-}
-
-a {
-    text-decoration: none;
 }
 
 /* =============== 
@@ -36,15 +30,15 @@ a {
     display: block;
     justify-content: center;
     align-items: center;
-    background-color: #b00b00;
-    font-family: 'Montserrat', sans-serif;
+    background-color: #434443;
+    font-family: montserratBold;
 }
 
 .logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: whitesmoke;
     font-size: 30px;
     height: 70px;
     text-decoration: none;
@@ -54,18 +48,20 @@ a {
     display: flex;
     justify-content: space-evenly;
     align-content: center;
-    background-color: white;
+    background-color: #434443;
     padding: 10px;
+    padding-right: 30px
 }
 
 .nav-item {
     margin: 15px;
+    list-style: none;
 }
 
 .a-link {
     text-decoration: none;
-    color: black;
-    background-color: white;
+    color: whitesmoke;
+    background-color: #434443;
     transition: .5s;
     -webkit-transition: .5s;
     -moz-transition: .5s;
@@ -86,18 +82,17 @@ a {
         -webkit-justify-content: space-between;
         align-items: center;
         -webkit-align-items: center;
-        background-color: white;
+        background-color: #434443;
         top: 0;
     }
     .header .logo {
         margin: 0px 50px;
         padding: 10px;
-        background-color: #b00b00;
     }
     .a-link {
         text-decoration: none;
-        color: black;
-        background-color: white;
+        color: whitesmoke;
+        background-color: #434443;
         transition: .5s;
         -webkit-transition: .5s;
         -moz-transition: .5s;
@@ -107,131 +102,203 @@ a {
         margin: 0px;
     }
     .a-link:hover {
-        background-color: #b00b00;
-        color: white;
+        transition: ease-in-out 400ms;
+        border-bottom: 2px whitesmoke solid;
         padding: 10px;
         margin: 0px;
+        -webkit-transition: ease-in-out 400ms;
+        -moz-transition: ease-in-out 400ms;
+        -ms-transition: ease-in-out 400ms;
+        -o-transition: ease-in-out 400ms;
     }
 }
 
 /* =============== 
-  index.html
+  index.html 
   =============== */
 
-#container-about-me {
-    background-color: white;
-    margin: 40px 50px;
-    padding-bottom: 25px;
-    font-family: 'Montserrat', sans-serif;
+.home-image {
+    position: relative;
+    opacity: .75;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-#title-about-me {
+.cover-image {
+    background-image: url(../images/image-1.jpeg);
+    height: 100vh;
+}
+
+.home-image-1 {
+    background-image: url(../images/turtle-2.JPG);
+    height: 90vh;
+    background-color: gray;
+    display: flex;
+}
+
+.cover-text {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 3vw;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.cover-text .border {
+    background-color: rgba(46, 38, 38, .7);
+    color: #fff;
+    padding: 20px;
+}
+
+#bio-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    font-size: bold;
+    height: 120px;
+    background: #434443;
+    color: whitesmoke;
+}
+
+.home-image .description-background {
+    display: flex;
+    width: 100%;
+}
+
+.description-background .bio-description {
+    margin: auto 50px;
+    width: 100%;
+    color: white;
+    font-size: 2vw;
+    letter-spacing: 4px;
+    background-color: rgba(46, 38, 38, .7);
+    padding: 20px;
+}
+
+.bio-description-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    background-color: #434443;
+    color: whitesmoke;
+}
+
+.bio-description-2-txt {
+    width: 40vw;
+    font-size: 2vw;
+}
+
+.hi {
+    height: auto;
+    width: 75%;
+}
+
+.home-image-3 {
+    background-image: url(../images/image-2.jpeg);
+    height: 90vh;
+    display: flex;
+}
+
+/* index.html - mobile*/
+
+@media screen and (max-width: 775px) {
+    .cover-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cover-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(46, 38, 38, .7);
+        width: 75%;
+        height: 80px;
+    }
+    .cover-text .border {
+        font-size: 28px;
+        background-color: transparent;
+    }
+    #bio-title {
+        font-size: 28px;
+    }
+    .description-background .bio-description {
+        font-size: 16px;
+        width: 80vw;
+    }
+    .hi {
+        width: 60%;
+        display: flex;
+        margin: auto;
+    }
+    .bio-description-2 {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 600px;
+    }
+    .bio-description-2-txt {
+        font-size: 16px;
+        width: 80vw;
+    }
+}
+
+/* =============== 
+  contact.html
+  =============== */
+
+/* =============== 
+  contact.html
+  =============== */
+
+.container-contact {
+    display: block;
+    background-color: white;
+    padding: 0px 20px;
+    margin: 40px 50px;
+}
+
+.contact {
     color: #b00b00;
     font-family: 'Montserrat', sans-serif;
     border-bottom: 2px solid lightgray;
     font-size: 40px;
     padding: 20px;
     margin-bottom: 15px;
-    width: 100%;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    max-width: 100%;
 }
 
-#selfie-img {
+.name, .email, .message {
     display: block;
-    margin: auto;
-    max-width: 75%;
-    height: auto;
+    margin: 5px 0px;
 }
 
-#bio {
-    font-family: 'Montserrat', sans-serif;
+#name, #email {
+    width: 100%;
+    height: 25px;
+    padding: 0px 5px;
+    border: 1px solid lightgray;
 }
 
-#bio-title {
-    font-family: droid serif;
-    font-size: 35px;
-    color: #2a2a2a;
-    text-align: center;
-    margin: 2vh 10vw;
-    font-family: 'Montserrat', sans-serif;
+#subject {
+    width: 100%;
+    border: 1px solid lightgray;
+    margin-bottom: 10px;
 }
 
-#resy {
-    justify-content: center;
-    display: flex;
-}
-
-#resume {
+#button {
     background-color: #b00b00;
+    padding: 15px 25px;
+    margin: 10px 0px;
     color: white;
-    height: 45px;
-    width: 150px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-#bio-description {
-    margin: 2vh 10vw;
-    line-height: 20px;
-    font-size: 14px;
-}
-
-@media screen and (min-width: 1000px) {
-    #container-about-me {
-        background-color: white;
-        display: flex;
-        flex-flow: column;
-        flex-wrap: wrap;
-        margin: 40px 50px;
-    }
-    #title-about-me {
-        color: #b00b00;
-        font-family: 'Montserrat', sans-serif;
-        border-bottom: 2px solid lightgray;
-        font-size: 40px;
-        padding: 20px;
-        margin-bottom: 15px;
-        width: 100%;
-    }
-    #bio {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(5, 20%);
-        justify-items: center;
-        width: 100%;
-        padding: 10px 20px;
-        font-family: 'Montserrat', sans-serif;
-    }
-    #selfie-img {
-        max-width: 100%;
-        height: auto;
-        padding: 20px 10px;
-        grid-column: 1/ span 1;
-        grid-row: 1 / span 4;
-        margin: auto;
-    }
-    #bio-title {
-        font-family: 'Montserrat', sans-serif;
-        grid-column: 2 / span 1;
-        grid-row: 1 / span 1;
-        font-family: droid serif;
-        font-size: 42px;
-        color: #2a2a2a;
-        margin: 18px;
-    }
-    #bio-description {
-        grid-column: 2 / span 1;
-        grid-row: 2 / span 3;
-        margin: 0;
-    }
-    #resy {
-        grid-column: 2 / span 1;
-        grid-row: 5 / span 1;
-    }
+    font-size: 16px;
 }
 
 /* =============== 
@@ -295,65 +362,50 @@ a {
 }
 
 /* =============== 
-  contact.html
-  =============== */
-
-.container-contact {
-    display: block;
-    background-color: white;
-    padding: 0px 20px;
-    margin: 40px 50px;
-}
-
-.contact {
-    color: #b00b00;
-    font-family: 'Montserrat', sans-serif;
-    border-bottom: 2px solid lightgray;
-    font-size: 40px;
-    padding: 20px;
-    margin-bottom: 15px;
-    max-width: 100%;
-}
-
-.name, .email, .message {
-    display: block;
-    margin: 5px 0px;
-}
-
-#name, #email {
-    width: 100%;
-    height: 25px;
-    padding: 0px 5px;
-    border: 1px solid lightgray;
-}
-
-#subject {
-    width: 100%;
-    border: 1px solid lightgray;
-    margin-bottom: 10px;
-}
-
-#button {
-    background-color: #b00b00;
-    padding: 15px 25px;
-    margin: 10px 0px;
-    color: white;
-}
-
-/* =============== 
   Footer
   =============== */
 
 .footer {
+    border-top: whitesmoke solid 5px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
+    margin: auto;
+    background-color: #434443;
+    color: whitesmoke;
+    padding: 40px;
+}
+
+.footer-contact {
+    border-top: whitesmoke solid 5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    background-color: #434443;
+    color: whitesmoke;
+    padding: 40px;
     bottom: 0;
-    background-color: #575757;
-    color: white;
-    border-top: 2px solid #b00b00;
-    height: 60px;
-    width: 100%;
     position: absolute;
-    margin-top: 25px;
+    width: 100%;
+}
+
+/* contact.html - mobile  */
+
+@media screen and (max-width: 775px) {
+    .footer-contact {
+        border-top: whitesmoke solid 5px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: auto;
+        background-color: #434443;
+        color: whitesmoke;
+        padding: 40px;
+        position: relative;
+        font-size: 12px;
+    }
+    .footer {
+        font-size: 12px;
+    }
 }

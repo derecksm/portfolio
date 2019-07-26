@@ -18,8 +18,9 @@ entire Sheet
     src: url(../fonts/montserrat-mold.ttf)
 }
 
-html {
+html, body {
     font-family: 'Montserrat', sans-serif;
+    height: 100%;
 }
 
 /* =============== 
@@ -74,7 +75,7 @@ html {
     padding: 0px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 850px) {
     .header {
         display: flex;
         display: -webkit-flex;
@@ -250,9 +251,6 @@ html {
     }
 }
 
-/* =============== 
-  contact.html
-  =============== */
 
 /* =============== 
   contact.html
@@ -263,6 +261,7 @@ html {
     background-color: white;
     padding: 0px 20px;
     margin: 40px 50px;
+    min-height: 100%;
 }
 
 .contact {
@@ -305,20 +304,30 @@ html {
   portfolio.html
   =============== */
 
-#porty {
-    color: #b00b00;
+  #portfolio-container{
+      min-height: 100%
+  }
+ #porty {
     font-family: 'Montserrat', sans-serif;
     border-bottom: 2px solid lightgray;
-    font-size: 40px;
-    padding: 20px;
-    margin-bottom: 15px;
-    max-width: 100%;
+    text-align: center;
+}
+#porty2{
+    display: none;
 }
 
-@media screen and (max-width: 640px) {
-    #porty {
-        text-align: center;
-    }
+@media screen and (max-width: 710px) {
+#porty {
+    display: none;
+}
+#porty2{
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 2px solid lightgray;
+    text-align: center;
+    font-size: 60px;
+}
+
 }
 
 #portfolio-container {
@@ -327,16 +336,13 @@ html {
     margin: 2rem;
 }
 
-#porty {
-    margin: auto;
-    padding: 20px 30px;
-}
 
 #portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding-top: 25px;
     grid-gap: 1rem;
+    overflow: auto;
 }
 
 .demos {
@@ -349,7 +355,8 @@ html {
     width: 200px;
     padding: 10px;
     color: white;
-    background-image: linear-gradient(to bottom, #b00b00 50%, white)
+    background-image: linear-gradient(to bottom, #b00b00 50%, white);
+    text-decoration: none;
 }
 
 #spacer {
@@ -366,7 +373,7 @@ html {
   =============== */
 
 .footer {
-    border-top: whitesmoke solid 5px;
+    border-top: darkgray solid 5px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -385,9 +392,6 @@ html {
     background-color: #434443;
     color: whitesmoke;
     padding: 40px;
-    bottom: 0;
-    position: absolute;
-    width: 100%;
 }
 
 /* contact.html - mobile  */
@@ -409,3 +413,4 @@ html {
         font-size: 12px;
     }
 }
+
